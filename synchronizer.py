@@ -38,5 +38,5 @@ class Synchronizer(Thread):
       except Empty as e:
         pass
       except Exception as e:
-        logger.error('An error occurred %s', e)
+        logger.error('An error occurred %s', exc_info=True)
 
